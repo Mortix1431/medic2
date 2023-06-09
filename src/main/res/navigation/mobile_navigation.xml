@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_analiz">
+
+    <fragment
+        android:id="@+id/navigation_analiz"
+        android:name="com.example.medic.ui.analiz.analiz_fragment"
+        android:label="Анализы"
+        tools:layout="@layout/fragment_analiz" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.medic.ui.profile.profile_fragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_results"
+        android:name="com.example.medic.ui.results.results_fragment"
+        android:label="Результаты"
+        tools:layout="@layout/fragment_results" />
+
+    <fragment
+        android:id="@+id/navigation_support"
+        android:name="com.example.medic.ui.support.support_fragment"
+        android:label="Поддержка"
+        tools:layout="@layout/fragment_support" />
+</navigation>

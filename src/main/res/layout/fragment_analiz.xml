@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents"
+
+    android:background="@color/white"
+    tools:context=".ui.analiz.analiz_fragment"    >
+
+
+    <SearchView
+
+        android:background="@drawable/bg"
+        android:layout_width="150pt"
+        android:layout_height="10pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="10pt"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:text="Акции и новости"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#939396"
+        android:textSize="15sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    android:layout_width="270dp"
+                    android:layout_height="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/gradient1"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:text="8000 ₽"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="100dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_weight="1"
+                    android:text="9 исследований"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="157dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Чек-ап для мужчин"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/chel"
+                    android:layout_marginLeft="80dp"/>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <View
+                    android:layout_width="270dp"
+                    android:layout_height="152dp"
+                    android:background="@drawable/gradient1"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/analyse4"
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:text="8000 ₽"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="100dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/analyse5"
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:text="Комплексное обследование перед вакцинацией "
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/analyse6"
+                    android:layout_width="157dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Подготовка к вакцинации"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Каталог анализов"
+
+        android:textColor="#939396"
+        android:textSize="15sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#1A6FEE"
+                android:text="Популярные"
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:text="Covid"
+                android:textColor="#7E7E9A"
+                android:layout_marginLeft="15dp"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Комплексные"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Чекапы"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Биохимия"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Гормоны"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Иммунитет"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Витамины"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Аллергены"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Анализ крови"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Анализ мочи"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Анализ кала"
+                android:textColor="#7E7E9A" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#F5F5F9"
+                android:text="Только в клинике"
+                android:textColor="#7E7E9A" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/list_analiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gradient2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_weight="1"
+                    android:text="1800 ₽"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="116dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_weight="1"
+                    android:text="2 дня"
+                    android:textColor="#939396"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="260dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="ПЦР-тест на определение РНК коронавируса стандартный"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#1A6FEE"
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="111dp"
+                    android:text="Добавить" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gradient2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="320dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Биохимический анализ крови, базовый"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_weight="1"
+                    android:text="2440 ₽"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="116dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_weight="1"
+                    android:text="1 день"
+                    android:textColor="#939396"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#1A6FEE"
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="111dp"
+                    android:text="Добавить" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gradient2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="260dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="ПЦР-тест на определение РНК коронавируса стандартный"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_weight="1"
+                    android:text="690 ₽"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="116dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_weight="1"
+                    android:text="1 день"
+                    android:textColor="#939396"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="111dp"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#1A6FEE"
+                    android:text="Добавить" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
